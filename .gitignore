@@ -1,0 +1,11 @@
+/report.html
+/geckodriver.log
+/assets/
+Tests/__pycache__/conftest.cpython-38-pytest-6.2.1.pyc
+Tests/__pycache__/test_Checkout.cpython-38-pytest-6.2.1.pyc
+Tests/__pycache__/test_HomePage.cpython-38-pytest-6.2.1.pyc
+Tests/__pycache__/test_LoginPage.cpython-38-pytest-6.2.1.pyc
+Tests/__pycache__/test_base.cpython-38-pytest-6.2.1.pyc
+.gitignore
+.idea/POMAutomationSauceDemo.iml
+.idea/misc.xml
