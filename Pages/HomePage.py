@@ -11,6 +11,7 @@ class HomePage(BasePage):
     add_tshirt_btn = (By.CSS_SELECTOR, ".inventory_item:nth-child(3) .btn_primary")
     remove_backpack_btn = (By.XPATH, "//div[3]/button")
     remove_light_btn = (By.XPATH, "//div[2]/div[3]/button")
+    inventory_item4 = (By.CSS_SELECTOR, "#item_4_img_link > .inventory_item_img")
 
     # Page Actions #
     def __init__(self, driver):
@@ -19,8 +20,6 @@ class HomePage(BasePage):
     def get_products_title(self):
         pr_title = self.get_element_text(self.products_title)
         return pr_title
-
-
 
     def add_backpack_tocart(self):
         self.press_button(self.add_backpack_btn)
@@ -36,3 +35,6 @@ class HomePage(BasePage):
 
     def add_tshirt_tocart(self):
         self.press_button(self.add_tshirt_btn)
+
+    def open_inventory_item4(self):
+        self.press_button(self.inventory_item4)
