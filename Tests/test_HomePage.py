@@ -1,5 +1,3 @@
-import pytest
-
 from Config.config import TestData
 from Pages.HeaderPage import HeaderPage
 from Pages.HomePage import HomePage

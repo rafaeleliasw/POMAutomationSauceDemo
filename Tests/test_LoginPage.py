@@ -1,4 +1,3 @@
-import pytest
 from Config.config import TestData
 from Pages.HomePage import HomePage
 from Pages.LoginPage import LoginPage
