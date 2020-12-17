@@ -3,9 +3,10 @@ from Pages.HomePage import HomePage
 from Pages.LoginPage import LoginPage
 from Pages.SideBarPage import SideBarPage
 from Tests.test_base import BaseTest
+from Tests.test_login_base import BaseLoginTest
 
 
-class TestLogin(BaseTest):
+class TestLogin(BaseLoginTest):
 
     def test_login(self):
         self.loginPage = LoginPage(self.driver)

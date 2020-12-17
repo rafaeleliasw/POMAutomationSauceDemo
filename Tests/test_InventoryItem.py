@@ -10,8 +10,6 @@ from Tests.test_base import BaseTest
 class TestHomePage(BaseTest):
 
     def test_add_remove_items(self):
-        self.loginPage = LoginPage(self.driver)
-        self.loginPage.do_login(TestData.STANDARD_USER_NAME, TestData.PASSWORD)
         self.homePage = HomePage(self.driver)
         self.homePage.open_inventory_item4()
         self.inventoryitemPage = InventoryItemPage(self.driver)
@@ -21,5 +19,3 @@ class TestHomePage(BaseTest):
         self.inventoryitemPage.remove_from_cart()
         self.inventoryitemPage.press_back()
         assert self.homePage.get_products_title() == "Products"
-        self.sidebar = SideBarPage(self.driver)
-        self.sidebar.do_logout()
