@@ -1,9 +1,6 @@
-from Config.config import TestData
 from Pages.HeaderPage import HeaderPage
 from Pages.HomePage import HomePage
 from Pages.InventoryItemPage import InventoryItemPage
-from Pages.LoginPage import LoginPage
-from Pages.SideBarPage import SideBarPage
 from Tests.test_base import BaseTest
 
 
