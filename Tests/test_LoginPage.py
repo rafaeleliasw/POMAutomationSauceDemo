@@ -2,7 +2,6 @@ from Config.config import TestData
 from Pages.HomePage import HomePage
 from Pages.LoginPage import LoginPage
 from Pages.SideBarPage import SideBarPage
-from Tests.test_base import BaseTest
 from Tests.test_login_base import BaseLoginTest
 
 
@@ -19,7 +18,8 @@ class TestLogin(BaseLoginTest):
     def test_logininvalidpassword(self):
         self.loginPage = LoginPage(self.driver)
         self.loginPage.do_login(TestData.STANDARD_USER_NAME, "InvalidPassword")
-        assert self.loginPage.get_error_message() == "Epic sadface: Username and password do not match any user in this service"
+        assert self.loginPage.get_error_message() == "Epic sadface: Username and password do " \
+                                                     "not match any user in this service"
 
     def test_loginlockeduser(self):
         self.loginPage = LoginPage(self.driver)
